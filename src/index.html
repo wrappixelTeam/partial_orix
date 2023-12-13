@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  data-bs-theme="light"
+  data-color-theme="Purple_Theme"
+  data-layout="vertical"
+  data-boxed-layout="boxed"
+  data-card="shadow"
+>
+  <head>
+    @@include("./partials/head.html")
+    <title>Modernize Bootstrap Admin</title>
+  </head>
+
+  <body data-sidebartype="full">
+    <!-- Preloader -->
+    <div class="preloader">
+      <img
+        src="./assets/images/logos/logo.svg"
+        alt="loader"
+        class="lds-ripple img-fluid"
+      />
+    </div>
+    <div id="main-wrapper">
+      <!-- Sidebar Start -->
+      <aside class="left-sidebar with-vertical">
+        <div>
+          @@include("./partials/sidebar.html", { "page": "dashboard", })
+        </div>
+      </aside>
+      <!--  Sidebar End -->
+      <div class="page-wrapper">
+        <!--  Header Start -->
+        <header class="topbar d-block d-xl-none border border-bottom">
+          <div class="with-vertical">@@include("./partials/header.html")</div>
+          <div class="app-header with-horizontal">
+          
+          </div>
+        </header>
+        <!--  Header End -->
+
+
+        <div class="body-wrapper overflow-hidden">
+          <div class="container-fluid">
+
+         <!-- Row 1 -->
+         <div class="row justify-content-between align-items-center mb-21">
+          <div class="col-auto">
+              <h2 class="mb-8 fs-9 fw-bolder lh-1">Dashboard</h2>
+              <p class="mb-0 fs-3 fw-medium">Today 09/08/2022</p>
+          </div>
+          <div class="col-auto d-flex gap-3 ">
+            <div class="notification-dropdown">
+              <a href="#" class=" dropdown-toggle round-48 d-flex justify-content-center bg-indigo align-items-center rounded-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../src/assets/images/svgs/notification.svg" alt="notification-icon"
+             >
+              </a>
+              <div class="dropdown-menu py-0 border-0 shadow">
+                
+                 <div class="title px-14 py-3 d-flex justify-content-between">
+                  <h3 class="mb-0 fs-5 fw-medium align-self-center">Notification</h3>
+                  <button class="btn btn-primary px-8 py-0 fs-1 fw-normal rounded-pill">5 new</button>
+                 </div>
+
+                 <a href="#" class="user-rohan px-14 py-3 d-flex gap-3 text-decoration-none">
+                  <div class="left round">
+                    <img src="../src/assets/images/profile/rohan.jpg" alt="rohan" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="right align-self-center">
+                      <h3 class="mb-0 fs-3 fw-medium ">Roman Joined the Team!</h3>
+                      <p class="mb-0 fs-3">Congratulate him</p>
+                  </div>
+              </a>
+    
+                 <a href="#" class="user-rohan px-14 py-3 d-flex gap-3 text-decoration-none">
+                  <div class="left round">
+                    <img src="../src/assets/images/profile/salma.jpg" alt="salma" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="right align-self-center">
+                      <h3 class="mb-0 fs-3 fw-medium">New message received</h3>
+                      <p class="mb-0 fs-3">Salma sent you new message</p>
+                  </div>
+              </a>
+                
+                 <a href="#" class="user-rohan px-14 py-3 d-flex gap-3 text-decoration-none">
+                  <div class="left round">
+                    <img src="../src/assets/images/profile/atul.jpg" alt="atul" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="right align-self-center">
+                      <h3 class="mb-0 fs-3 fw-medium">New Payment received</h3>
+                      <p class="mb-0 fs-3">Check your earnings</p>
+                  </div>
+              </a>
+               
+                 <a href="#" class="user-rohan px-14 py-3 d-flex gap-3 text-decoration-none">
+                  <div class="left round">
+                    <img src="../src/assets/images/profile/aniket.jpg" alt="aniket" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="right align-self-center">
+                      <h3 class="mb-0 fs-3 fw-medium">Jolly completed tasks</h3>
+                      <p class="mb-0 fs-3">Assign her new tasks</p>
+                  </div>
+              </a>
+              
+                 <a href="#" class="user-rohan px-14 py-3 d-flex gap-3 text-decoration-none">
+                  <div class="left round">
+                    <img src="../src/assets/images/profile/rohan.jpg" alt="rohan" class="img-fluid rounded-circle">
+                  </div>
+                  <div class="right align-self-center">
+                      <h3 class="mb-0 fs-3 fw-medium">Roman Joined the Team!</h3>
+                      <p class="mb-0 fs-3">Congratulate him</p>
+                  </div>
+              </a>
+              </div>
+            </div>
+
+            <a href="javascript:void(0)" class="round-48 d-flex justify-content-center align-items-center rounded-2 search" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="../src/assets/images/svgs/search.svg" alt="search">
+            </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-md modal-dialog-scrollable">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <input type="text" class="form-control fw-normal" id="exampleFormControlInput1 fs-12" placeholder="Search">
+                                <button type="button" class="btn-close ms-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <h5 class="mb-0 p-2 fs-6 fw-medium">Quick Page Links</h5>
+                                <div class="page-links py-2">
+
+                                  <a href="#" class="text-decoration-none py-1 px-2 d-flex flex-column">
+                                 <span class="mb-0 fw-normal fs-3 text-dark-emphasis">Modern</span>
+                                 <span class="mb-0 fs-1 fw-normal">/dashboards/modern</span>
+                                  </a>
+
+                                  <a href="#" class="text-decoration-none py-1 px-2 d-flex flex-column">
+                                 <span class="mb-0 fw-normal fs-3 text-dark-emphasis">eCommerce</span>
+                                 <span class="mb-0 fs-1 fw-normal">/dashboards/ecommerce</span>
+                                  </a>
+
+                                  <a href="#" class="text-decoration-none py-1 px-2 d-flex flex-column">
+                                 <span class="mb-0 fw-normal fs-3 text-dark-emphasis">Contacts</span>
+                                 <span class="mb-0 fs-1 fw-normal">/apps/contacts</span>
+                                  </a>
+
+                                  <a href="#" class="text-decoration-none py-1 px-2 d-flex flex-column">
+                                 <span class="mb-0 fw-normal fs-3 text-dark-emphasis">Posts</span>
+                                 <span class="mb-0 fs-1 fw-normal">/apps/blog/posts</span>
+                                  </a>
+
+                                  <a href="#" class="text-decoration-none py-1 px-2 d-flex flex-column">
+                                 <span class="mb-0 fw-normal fs-3 text-dark-emphasis">Detail</span>
+                                 <span class="mb-0 fs-1 fw-normal">/apps/blog/detail/ streaming-video-way-before-it-was-cool-go-dark-tomorrow</span>
+                                  </a>
+
+                                  <a href="#" class="text-decoration-none py-1 px-2 d-flex flex-column">
+                                 <span class="mb-0 fw-normal fs-3 text-dark-emphasis">Shop</span>
+                                 <span class="mb-0 fs-1 fw-normal">/apps/ecommerce/shop</span>
+                                  </a>
+                                  <a href="#" class="text-decoration-none py-1 px-2 d-flex flex-column">
+                                 <span class="mb-0 fw-normal fs-3 text-dark-emphasis">Posts</span>
+                                 <span class="mb-0 fs-1 fw-normal">/apps/blog/posts</span>
+                                  </a>
+
+                                  <a href="#" class="text-decoration-none py-1 px-2 d-flex flex-column">
+                                 <span class="mb-0 fw-normal fs-3 text-dark-emphasis">Detail</span>
+                                 <span class="mb-0 fs-1 fw-normal">/apps/blog/detail/ streaming-video-way-before-it-was-cool-go-dark-tomorrow</span>
+                                  </a>
+
+                                  <a href="#" class="text-decoration-none py-1 px-2 d-flex flex-column">
+                                 <span class="mb-0 fw-normal fs-3 text-dark-emphasis">Shop</span>
+                                 <span class="mb-0 fs-1 fw-normal">/apps/ecommerce/shop</span>
+                                  </a>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>            
+          </div>
+         </div>
+
+         <!-- Row 2 -->
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body d-flex gap-3">
+                <div class="round-48 rounded-2 bg-primary d-flex justify-content-center align-items-center">
+                  <img src="../src/assets/images/svgs/customer.svg" alt="customer">
+                </div>
+                <div class="">
+                  <p class="mb-0 fw-medium fs-4">Customers</p>
+                  <div class="d-flex gap-7 align-items-center">
+                     <h3 class="mb-0 fs-8 fw-bold">36,254</h3>
+                     <div class="d-flex gap-6">
+                       <img src="../src/assets/images/svgs/up_arrow.svg" alt="up-arrow">
+                       <p class="mb-0 text-success fs-5 fw-medium">5.27%</p>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body d-flex gap-3">
+                <div class="round-48 rounded-2 bg-secondary d-flex justify-content-center align-items-center">
+                  <img src="../src/assets/images/svgs/customer.svg" alt="customer">
+                </div>
+                <div class="">
+                  <p class="mb-0 fw-medium fs-4">Orders</p>
+                  <div class="d-flex gap-7 align-items-center">
+                     <h3 class="mb-0 fs-8 fw-bold">5,543</h3>
+                     <div class="d-flex gap-6">
+                       <img src="../src/assets/images/svgs/down_arrow.svg" alt="up-arrow">
+                       <p class="mb-0 text-warning-emphasis fs-5 fw-medium">5.27%</p>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body d-flex gap-3">
+                <div class="round-48 rounded-2 bg-warning d-flex justify-content-center align-items-center">
+                  <img src="../src/assets/images/svgs/customer.svg" alt="customer">
+                </div>
+                <div class="">
+                  <p class="mb-0 fw-medium fs-4">Revenue</p>
+                  <div class="d-flex gap-7 align-items-center">
+                     <h3 class="mb-0 fs-8 fw-bold">$6,254</h3>
+                     <div class="d-flex gap-6">
+                       <img src="../src/assets/images/svgs/up_arrow.svg" alt="up-arrow">
+                       <p class="mb-0 text-success fs-5 fw-medium">7.00%</p>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+            <!-- Row 3 -->
+            <div class="row">
+              <div class="col-lg-8 d-flex align-items-stretch">
+                <div class="card w-100">
+                    <div class="card-body pb-0">
+                        <div class="d-sm-flex d-block justify-content-between align-items-center mb-12">
+                          <div class="mb-3 mb-sm-0">
+                              <h5 class="card-title fw-bold">Activity</h5>
+                          </div>
+                          <div class="d-flex align-items-center gap-3">
+                            <div class="d-flex gap-11">
+                              <div class="d-flex gap-1 align-items-center">
+                                <div class="round-6 rounded-1 bg-primary"></div>
+                                <p class="mb-0 fs-2 fw-medium text-dark">Customers</p>
+                              </div>
+                              <div class="d-flex gap-1 align-items-center">
+                                <div class="round-6 rounded-1 bg-secondary"></div>
+                                <p class="mb-0 fs-2 fw-medium text-dark">Orders</p>
+                              </div>
+                              <div class="d-flex gap-1 align-items-center">
+                                <div class="round-6 rounded-1 bg-warning"></div>
+                                <p class="mb-0 fs-2 fw-medium text-dark">Revenue</p>
+                              </div>
+                             </div>
+                             <div class="dropstart d-flex">
+                              <a href="#" class=" dropdown-toggle right d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img src="../src/assets/images/svgs/three_dots_icon.svg"
+                                  alt="three_dots_icon">
+                              </a>
+                              <ul class="dropdown-menu shadow-lg">
+                                <li><a class="dropdown-item border-bottom" href="#">Action</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="activity" ></div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                 <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="mb-0 card-title fw-bold">Total Sales</h5>
+                      <div class="dropstart d-flex">
+                        <a href="#" class=" dropdown-toggle right d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../src/assets/images/svgs/three_dots_icon.svg"
+                            alt="three_dots_icon">
+                        </a>
+                        <ul class="dropdown-menu shadow-lg">
+                          <li><a class="dropdown-item border-bottom" href="#">Action</a></li>
+                          <li><a class="dropdown-item border-bottom" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>                      
+                    </div>
+                     <div class="wrapper d-flex justify-content-center mt-7 mb-1">
+                      <div id="sales"></div>
+                     </div>
+                     <div>
+                      <div class="d-flex justify-content-between align-items-center ">
+                         <div class="d-flex align-items-center gap-8">
+                          <div class="round-6 rounded-1 bg-primary"></div>
+                          <p class="mb-0 fs-5">Direct</p>
+                         </div>
+                          <p class="mb-0 text-dark-emphasis fs-5">$300</p>
+                      </div>
+                      <hr class="divider">
+                      <div class="d-flex justify-content-between align-items-center ">
+                        <div class="d-flex align-items-center gap-8">
+                         <div class="round-6 rounded-1 bg-secondary"></div>
+                         <p class="mb-0 fs-5">Affilliate</p>
+                        </div>
+                         <p class="mb-0 text-dark-emphasis fs-5">$48.96</p>
+                     </div>
+                     <hr class="divider">
+                     <div class="d-flex justify-content-between align-items-center ">
+                      <div class="d-flex align-items-center gap-8">
+                       <div class="round-6 rounded-1 bg-warning"></div>
+                       <p class="mb-0 fs-5">Sponsored</p>
+                      </div>
+                       <p class="mb-0 text-dark-emphasis fs-5">$135.18</p>
+                   </div>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+            </div>
+            <!-- Row 4 -->
+            <div class="row">
+              <div class="col-lg-8 d-flex align-items-stretch">
+                  <div class="card w-100">
+                     <div class="card-body">
+                        <div class="mb-4 d-flex justify-content-between align-items-center">
+                             <h5 class="card-title fw-bold mb-0">Top Selling Products</h5>
+                             <a href="#" class="d-flex justify-content-center align-items-center gap-8">
+                              <p class="mb-0 export">Export</p>
+                               <img src="../src/assets/images/svgs/export.svg" alt="export">
+                             </a>
+                        </div>
+                        <div class="table-responsive">
+                           <table class="table text-nowrap mb-0 align-middle">
+                             <tbody>
+                              <tr>
+
+                                <td>
+                                <div class="d-flex gap-3 align-items-center">
+                                  <div class="round-40 product-icon d-flex justify-content-center align-items-center">
+                                    <img src="../src/assets/images/products/apple.png" alt="apple">
+                                  </div>
+                                  <div>
+                                    <h6 class="fw-medium mb-0 fs-5">Apple Juciy Pie</h6>
+                                    <span class="fw-medium product-date fs-2">07 April 2018</span>
+                                  </div>
+                                </div>
+                                </td>
+                                <td class="d-flex justify-content-center">
+                                  <div>
+                                    <h6 class="fw-medium mb-0 fs-5">45</h6>
+                                    <span class="fw-medium fs-2 product-date">Quantity</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="d-flex justify-content-end">
+                                    <div class="text-end">
+                                      <h6 class="fw-medium mb-0 fs-5 text-end">$79.49</h6>
+                                      <span class="fw-medium fs-2 product-date">Price</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td >
+                                  <div class="d-flex align-items-center justify-content-end">
+                                    <span class="badge bg-dark-subtle rounded-3 fw-medium text-dark">Apple</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+
+                                <td>
+                                <div class="d-flex gap-3 align-items-center">
+                                  <div class="round-40 product-icon d-flex justify-content-center align-items-center">
+                                    <img src="../src/assets/images/products/banana.png" alt="banana">
+                                  </div>
+                                  <div>
+                                    <h6 class="fw-medium mb-0 fs-5">Banana Smoothie Pie</h6>
+                                    <span class="fw-medium product-date fs-2">05 Aug 2018</span>
+                                  </div>
+                                </div>
+                                </td>
+                                <td class="d-flex justify-content-center">
+                                  <div>
+                                    <h6 class="fw-medium mb-0 fs-5">23</h6>
+                                    <span class="fw-medium fs-2 product-date">Quantity</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="d-flex justify-content-end">
+                                    <div class="text-end">
+                                      <h6 class="fw-medium mb-0 fs-5 text-end">$35.67</h6>
+                                      <span class="fw-medium fs-2 product-date">Price</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td >
+                                  <div class="d-flex align-items-center justify-content-end">
+                                    <span class="badge bg-info-subtle rounded-3 fw-medium text-info">Nike</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+
+                                <td>
+                                <div class="d-flex gap-3 align-items-center">
+                                  <div class="round-40 product-icon d-flex justify-content-center align-items-center">
+                                    <img src="../src/assets/images/products/strawberry.png" alt="strawberry">
+                                  </div>
+                                  <div>
+                                    <h6 class="fw-medium mb-0 fs-5">Stawberry Milkshake</h6>
+                                    <span class="fw-medium product-date fs-2">12 Dec 2018</span>
+                                  </div>
+                                </div>
+                                </td>
+                                <td class="d-flex justify-content-center">
+                                  <div>
+                                    <h6 class="fw-medium mb-0 fs-5">12</h6>
+                                    <span class="fw-medium fs-2 product-date">Quantity</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="d-flex justify-content-end">
+                                    <div class="text-end">
+                                      <h6 class="fw-medium mb-0 fs-5 text-end">$48.30</h6>
+                                      <span class="fw-medium fs-2 product-date">Price</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td >
+                                  <div class="d-flex align-items-center justify-content-end">
+                                    <span class="badge bg-success-subtle rounded-3 fw-medium text-success">Adidass</span>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+
+                                <td>
+                                <div class="d-flex gap-3 align-items-center">
+                                  <div class="round-40 product-icon d-flex justify-content-center align-items-center">
+                                    <img src="../src/assets/images/products/capsicum.png" alt="capsicum">
+                                  </div>
+                                  <div>
+                                    <h6 class="fw-medium mb-0 fs-5">Capsicum Spicy Louf</h6>
+                                    <span class="fw-medium product-date fs-2">23 Sep 2018</span>
+                                  </div>
+                                </div>
+                                </td>
+                                <td class="d-flex justify-content-center">
+                                  <div>
+                                    <h6 class="fw-medium mb-0 fs-5">09</h6>
+                                    <span class="fw-medium fs-2 product-date">Quantity</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="d-flex justify-content-end">
+                                    <div class="text-end">
+                                      <h6 class="fw-medium mb-0 fs-5 text-end">$56.35</h6>
+                                      <span class="fw-medium fs-2 product-date">Price</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td >
+                                  <div class="d-flex align-items-center justify-content-end">
+                                    <span class="badge bg-danger-subtle rounded-3 fw-medium text-danger">Gucci</span>
+                                  </div>
+                                </td>
+                              </tr>
+
+
+                             </tbody>
+                          </table>
+                        
+                        
+                        </div>
+                     </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 d-flex align-items-stretch">
+                  <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold mb-0">Recent Transactions</h5>
+                        <div class="py-14">
+                          <div id="visitfromworld"></div>
+                        </div>
+                        <div class="new-york mb-22">
+                          <div class="info d-flex justify-content-between mb-10">
+                              <p class="mb-0 fs-5 fw-normal text-light">New York</p>
+                              <span class="fs-5 fw-normal text-dark-emphasis">$3k</span>
+                          </div>
+                          <div class="progress" role="progressbar" aria-label="Example 1px high"
+                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                              style="height: 4px">
+                              <div class="progress-bar bg-secondary" style="width: 25%"></div>
+                          </div>
+                      </div>
+                        <div class="San-Fransisco mb-22">
+                          <div class="info d-flex justify-content-between mb-10">
+                              <p class="mb-0 fs-5 fw-normal text-light">San Fransisco</p>
+                              <span class="fs-5 fw-normal text-dark-emphasis">$23k</span>
+                          </div>
+                          <div class="progress" role="progressbar" aria-label="Example 1px high"
+                              aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"
+                              style="height: 4px">
+                              <div class="progress-bar bg-secondary" style="width: 35%"></div>
+                          </div>
+                      </div>
+                        <div class="Singapore">
+                          <div class="info d-flex justify-content-between mb-10">
+                              <p class="mb-0 fs-5 fw-normal text-light">Singapore</p>
+                              <span class="fs-5 fw-normal text-dark-emphasis">$63k</span>
+                          </div>
+                          <div class="progress" role="progressbar" aria-label="Example 1px high"
+                              aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+                              style="height: 4px">
+                              <div class="progress-bar bg-secondary" style="width: 55%"></div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Right-Sidebar Start -->
+<aside class="right-sidebar">
+  <div>
+    @@include("./partials/right-sidebar.html", { "page": "dashboard", })
+  </div>
+</aside>
+      <!-- Right-Sidebar End -->
+
+    </div>
+    <div class="dark-transparent backdrops"></div>
+    @@include("./partials/scripts.html")
+    <script src="@@webRoot/node_modules/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="@@webRoot/node_modules/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="@@webRoot/assets/js/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="@@webRoot/assets/js/dashboard/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+// Recent Transaction timeline
+
+.timeline-widget .timeline-item .timeline-badge-wrap .timeline-badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 6px solid;
+}
+.timeline-widget .timeline-item .timeline-badge-wrap .timeline-badge-border {
+    width: 1px;
+    height: 100%;
+    background-color: #EFE8DF;
+}
+.timeline-widget .timeline-item .timeline-desc {
+    padding: 9px 0px 24px 16px;
+}
+.timeline-widget .timeline-item .timeline-desc .time{
+    color: #AFA3B2;
+}
+.timeline-widget .timeline-small-cap{
+    letter-spacing: 1px;
+    color: #847388;
+}
+
+// Products Table
+
+.export{
+    color: #01CCE1;
+}
+.product-icon{
+    border-radius: 10px;
+    background: #f5f4f5;
+}
+.product-date{
+    color: #8F7C95;
+}
+
+// location-world-map
+// jvector map
+.jvectormap-container{
+    svg{
+        width: 100%;
+        height: 108px;
+    }
+    .jvectormap-zoomin{
+        display: none;
+    }
+    .jvectormap-zoomout{
+        display: none;
+    }
+}
+// dropdown - modification
+.dropend .dropdown-toggle::after { 
+    content: none; 
+}
+.dropstart .dropdown-toggle::before { 
+    content: none; 
+}
+.dropdown-toggle::after{
+    content: none;
+}
+
+.notification-dropdown{
+    .dropdown-menu{
+        width: 360px;
+    }
+}
+
+// modal
+
+.modal-body{
+    height: 400px;
+}

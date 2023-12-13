@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  data-bs-theme="light"
+  data-color-theme="Blue_Theme"
+  data-layout="vertical"
+  data-boxed-layout="boxed"
+  data-card="shadow"
+>
+  <head>
+    @@include("../partials/head.html")
+    <title>Modernize Bootstrap Admin</title>
+  </head>
+
+  <body data-sidebartype="full">
+    <!-- Preloader -->
+    <div class="preloader">
+      <img
+        src="../assets/images/logos/favicon.png"
+        alt="loader"
+        class="lds-ripple img-fluid"
+      />
+    </div>
+    <div id="main-wrapper">
+      <!-- Sidebar Start -->
+      <aside class="left-sidebar with-vertical">
+        <div>
+          @@include("../partials/sidebar.html", { "page": "dashboard", })
+        </div>
+      </aside>
+      <!--  Sidebar End -->
+      <div class="page-wrapper">
+        <!--  Header Start -->
+        <header class="topbar">
+          <div class="with-vertical">@@include("../partials/header.html")</div>
+          <div class="app-header with-horizontal">
+        
+          </div>
+        </header>
+        <!--  Header End -->
+
+        <aside class="left-sidebar with-horizontal">
+
+        </aside>
+
+        <div class="body-wrapper">
+          <div class="container-fluid">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title fw-semibold mb-4">Alerts</h5>
+                    <div class="card mb-0">
+                        <div class="card-body p-4">
+                             <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
+                             <div class="alert alert-secondary" role="alert">A simple secondary alert—check it out!</div>
+                             <div class="alert alert-success" role="alert">A simple success alert—check it out!</div>
+                             <div class="alert alert-danger" role="alert">A simple danger alert—check it out!</div>
+                             <div class="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
+                             <div class="alert alert-info" role="alert">A simple info alert—check it out!</div>
+                             <div class="alert alert-light text-dark" role="alert">A simple light alert—check it out!</div>
+                             <div class="alert alert-dark text-light" role="alert">A simple dark alert—check it out!</div>
+                        </div>
+                       </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+            <!-- Right-Sidebar Start -->
+            <aside class="right-sidebar">
+              <div>
+                @@include("../partials/right-sidebar.html", { "page": "dashboard", })
+              </div>
+            </aside>
+                  <!-- Right-Sidebar End -->
+    </div>
+    <div class="dark-transparent sidebartoggler"></div>
+    @@include("../partials/scripts.html")
+  </body>
+</html>

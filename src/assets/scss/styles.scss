@@ -1,0 +1,41 @@
+
+
+@import "./variables/variables";
+@import "./variables/theme_variables";
+
+
+// theme colors
+
+
+@import "./variables/variables-purple";
+
+
+// Import Bootstrap source files (Required file)
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./layouts/layouts";
+@import "./layouts/sidebar";
+@import "./layouts/header";
+@import "./layouts/spinner";
+
+@import "./components/buttons";
+@import "./components/cards";
+@import "./components/dropdown-animation";
+// @import "./components/tabs";
+@import "./components/form";
+@import "./components/table";
+
+@import "./utilities/icon-size";
+@import "./utilities/icon-hover";
+@import "./utilities/background";
+@import "./utilities/override";
+@import "./utilities/font";
+
+@import "./pages/dashboard";
+
+
+// Scrollbar style (Required file)
+@import "../../../node_modules/simplebar/dist/simplebar.min.css";
+
+// Tabler Icons style
+@import "../fonts/tabler-icons/tabler-icons.css";

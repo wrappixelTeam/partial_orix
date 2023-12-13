@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  data-bs-theme="light"
+  data-color-theme="Blue_Theme"
+  data-layout="vertical"
+  data-boxed-layout="boxed"
+  data-card="shadow"
+>
+  <head>
+    @@include("../partials/head.html")
+    <title>Modernize Bootstrap Admin</title>
+  </head>
+
+  <body data-sidebartype="full">
+    <!-- Preloader -->
+    <div class="preloader">
+      <img
+        src="../assets/images/logos/favicon.png"
+        alt="loader"
+        class="lds-ripple img-fluid"
+      />
+    </div>
+    <div id="main-wrapper">
+      <!-- Sidebar Start -->
+      <aside class="left-sidebar with-vertical">
+        <div>
+          @@include("../partials/sidebar.html", { "page": "dashboard", })
+        </div>
+      </aside>
+      <!--  Sidebar End -->
+      <div class="page-wrapper">
+        <!--  Header Start -->
+        <header class="topbar">
+          <div class="with-vertical">@@include("../partials/header.html")</div>
+          <div class="app-header with-horizontal">
+         
+          </div>
+        </header>
+        <!--  Header End -->
+
+        <aside class="left-sidebar with-horizontal">
+
+        </aside>
+
+        <div class="body-wrapper">
+          <div class="container-fluid">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5 class="card-title fw-semibold mb-4">Card</h5>
+                            <div class="card">
+                                <img src="../assets/images/products/product-1.jpg" alt="product" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    </p>
+                                    <a href="#" class="btn btn-primary fw-normal">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <h5 class="card-title fw-semibold mb-4">Header and footer</h5>
+                                 <div class="card-header">Featured</div>
+                                 <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <h5 class="card-title fw-semibold mb-4">Titles, text, and links</h5>
+                                 <div class="card-body">
+                                    <div class="card-title">Card title</div>
+                                    <div class="card-subtitle mb-2 text-muted">Card subtitle</div>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right-Sidebar Start -->
+      <aside class="right-sidebar">
+        <div>
+          @@include("../partials/right-sidebar.html", { "page": "dashboard", })
+        </div>
+      </aside>
+            <!-- Right-Sidebar End -->
+    </div>
+    <div class="dark-transparent sidebartoggler"></div>
+    @@include("../partials/scripts.html")
+  </body>
+</html>
