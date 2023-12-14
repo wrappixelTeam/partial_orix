@@ -22721,6 +22721,9 @@ html[data-boxed-layout=boxed] .container-fluid, html[data-boxed-layout=boxed] .c
   padding: 0 20px;
 }
 
+.sidebar-nav ul .sidebar-item {
+  margin-bottom: 38px;
+}
 .sidebar-nav ul .sidebar-item .sidebar-link {
   display: flex;
   font-size: 16px;
@@ -22728,11 +22731,11 @@ html[data-boxed-layout=boxed] .container-fluid, html[data-boxed-layout=boxed] .c
   align-items: center;
   line-height: 25px;
   position: relative;
-  margin: 0px 0px 38px 62px;
   border-radius: 7px;
   gap: 10px;
   text-decoration: none;
   font-weight: 500;
+  transition: padding 0.8s ease;
 }
 .sidebar-nav ul .sidebar-item .sidebar-link span:first-child {
   display: flex;
@@ -22741,7 +22744,8 @@ html[data-boxed-layout=boxed] .container-fluid, html[data-boxed-layout=boxed] .c
   flex-shrink: 0;
   font-size: 21px;
 }
-.sidebar-nav ul .sidebar-item .sidebar-link:hover {
+.sidebar-nav ul .sidebar-item .sidebar-link:not(.active):hover {
+  padding-left: 10px;
   color: var(--bs-primary-text-emphasis);
 }
 .sidebar-nav ul .sidebar-item .sidebar-link.active:hover.has-arrow::after {
