@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "../../../node_modules/simplebar/dist/simplebar.min.css";
 @import "../fonts/tabler-icons/tabler-icons.css";
 [data-bs-theme=light][data-color-theme=Purple_Theme]:root,
@@ -107,7 +108,7 @@
   --bs-dark-border-subtle: #5a6a85;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: "Circular Pro";
+  --bs-font-sans-serif: "Inter", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -11560,7 +11561,7 @@ textarea.form-control-lg {
 }
 
 .fw-lighter {
-  font-weight: 300 !important;
+  font-weight: 200 !important;
 }
 
 .fw-light {
@@ -23452,38 +23453,6 @@ html[data-card=border] .card {
   padding: 15px 30px;
 }
 
-@font-face {
-  font-family: "Circular Pro Book";
-  src: url("../../../../dist/assets/font/CircularPro-Book.eot");
-  src: url("../../../../dist/assets/font/CircularPro-Book.eot?#iefix") format("embedded-opentype"), url("../../../../dist/assets/font/CircularPro-Book.woff2") format("woff2"), url("../../../../dist/assets/font/CircularPro-Book.woff") format("woff"), url("../../../../dist/assets/font/CircularPro-Book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Circular Pro";
-  src: url("../../../../dist/assets/font/CircularPro-Medium.eot");
-  src: url("../../../../dist/assets/font/CircularPro-Medium.eot?#iefix") format("embedded-opentype"), url("../../../../dist/assets/font/CircularPro-Medium.woff2") format("woff2"), url("../../../../dist/assets/font/CircularPro-Medium.woff") format("woff"), url("../../../../dist/assets/font/CircularPro-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Circular Pro";
-  src: url("../../../../dist/assets/font/CircularPro-Bold.eot");
-  src: url("../../../../dist/assets/font/CircularPro-Bold.eot?#iefix") format("embedded-opentype"), url("../../../../dist/assets/font/CircularPro-Bold.woff2") format("woff2"), url("../../../../dist/assets/font/CircularPro-Bold.woff") format("woff"), url("../../../../dist/assets/font/CircularPro-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Circular Pro";
-  src: url("../../../../dist/assets/font/CircularPro-BlackItalic.eot");
-  src: url("../../../../dist/assets/font/CircularPro-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../../../../dist/assets/font/CircularPro-BlackItalic.woff2") format("woff2"), url("../../../../dist/assets/font/CircularPro-BlackItalic.woff") format("woff"), url("../../../../dist/assets/font/CircularPro-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
 .timeline-widget .timeline-item .timeline-badge-wrap .timeline-badge {
   width: 20px;
   height: 20px;

@@ -51,5 +51,13 @@ $(function () {
       $(".notification-dropdown").addClass("dropstart");
     }
   });
+
+  if ($(window).innerWidth() <= 572) {
+    $(".notification-dropdown").removeClass("dropstart");
+    $(".notification-dropdown").addClass("dropdown");
+  } else {
+    $(".notification-dropdown").removeClass("dropdown");
+    $(".notification-dropdown").addClass("dropstart");
+  }
   
 });
