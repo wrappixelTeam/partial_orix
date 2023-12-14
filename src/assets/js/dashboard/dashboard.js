@@ -42,7 +42,7 @@ responsive: [{
 plotOptions: {
   bar: {
     horizontal: false,
-    borderRadius: 0,
+    borderRadius: 6,
     columnWidth: "27%",
     dataLabels: {
       enabled: false,
