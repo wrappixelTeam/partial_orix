@@ -236,36 +236,6 @@
   margin: -24px 0px 0 -43px;
 }
 
-// -----------------------------------
-// Sidebar Type : Minisidebar
-// -----------------------------------
-
-// About LG Screen
-@include media-breakpoint-up(xl) {
-  [data-layout="vertical"] {
-    [data-sidebartype="mini-sidebar"] {
-      .left-sidebar {
-        width: $sidebar-width-mini;
-
-        // &:hover {
-        //   width: $sidebar-width-full;
-        //   position: fixed;
-        //   height: 100vh;
-
-        //   .logo-part {
-        //     width: auto;
-        //     overflow: unset;
-        //   }
-        // }
-
-        .logo-part {
-          width: 34px;
-          overflow: hidden;
-        }
-      }
-    }
-  }
-}
 
 // Down LG Screen
 @include media-breakpoint-down(xl) {

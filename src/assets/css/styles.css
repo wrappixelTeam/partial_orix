@@ -90,11 +90,11 @@
   --bs-danger-text-emphasis: #BC3043;
   --bs-light-text-emphasis: shade-color(#F5F4F5, 60%);
   --bs-dark-text-emphasis: #463949;
-  --bs-primary-bg-subtle: tint-color(#763EBD, 80%);
-  --bs-secondary-bg-subtle: tint-color(#95CFD5, 80%);
+  --bs-primary-bg-subtle: #f5ebff;
+  --bs-secondary-bg-subtle: #ecfdff;
   --bs-success-bg-subtle: #E3F9DD;
   --bs-info-bg-subtle: #D9EDFF;
-  --bs-warning-bg-subtle: tint-color(#FD7E50, 80%);
+  --bs-warning-bg-subtle: #ffe9e0;
   --bs-danger-bg-subtle: #FFE1E0;
   --bs-light-bg-subtle: #f6f9fc;
   --bs-dark-bg-subtle: #F0F0F0;
@@ -22831,15 +22831,6 @@ html[data-boxed-layout=boxed] .container-fluid, html[data-boxed-layout=boxed] .c
   margin: -24px 0px 0 -43px;
 }
 
-@media (min-width: 1300px) {
-  [data-layout=vertical] [data-sidebartype=mini-sidebar] .left-sidebar {
-    width: 87px;
-  }
-  [data-layout=vertical] [data-sidebartype=mini-sidebar] .left-sidebar .logo-part {
-    width: 34px;
-    overflow: hidden;
-  }
-}
 @media (max-width: 1299.98px) {
   .left-sidebar {
     width: 270px;
