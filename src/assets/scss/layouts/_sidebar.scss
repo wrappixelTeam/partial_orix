@@ -13,6 +13,14 @@
   right: 0;
   height: 100%;
 
+  .sidebar-navitems{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
   .sidebartoggler {
     color: var(--bs-dark-text-emphasis);
   }
@@ -20,7 +28,7 @@
   .scroll-sidebar {
     overflow-y: auto;
     padding: $sidebar-spacing-x;
-    height: calc(100vh);
+    height: calc(100vh - 150px);
     border-radius: $border-radius;
 
     .simplebar-track.simplebar-horizontal {
@@ -73,7 +81,6 @@
 .sidebar-nav {
   ul {
     .sidebar-item {
-      margin-bottom: 38px;
       .sidebar-link {
         display: flex;
         font-size: 16px;
@@ -85,7 +92,7 @@
         gap: 10px;
         text-decoration: none;
         font-weight: $font-weight-medium;
-        transition: padding 0.8s ease;
+        transition: padding 0.3s ease;
 
         span:first-child {
           display: flex;
@@ -98,7 +105,6 @@
 
         &:not(.active):hover {
           padding-left: 10px;
-          // background: var(--bs-primary-bg-subtle);
           color: var(--bs-primary-text-emphasis);
         } 
       }

@@ -31,7 +31,7 @@ $success: $green !default;
 $info: $cyan !default;
 $warning: $orange !default;
 $danger: $red !default;
-$light: #7B6681 !default;
+$light: #F5F4F5 !default;
 $muted: $gray-500 !default;
 $dark: $gray-600 !default;
 $dark-light: $gray-600 !default;
@@ -72,7 +72,7 @@ $success-text-emphasis: #4FB043 !default;
 $info-text-emphasis: shade-color($info, 60%) !default;
 $warning-text-emphasis: #CE461B !default;
 $danger-text-emphasis: #BC3043 !default;
-$light-text-emphasis: $gray-100 !default;
+$light-text-emphasis: shade-color($light, 60%) !default;
 $dark-text-emphasis: #463949 !default;
 
 // Spacer
