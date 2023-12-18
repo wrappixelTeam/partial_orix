@@ -163,7 +163,7 @@ chart.render();
         "stroke-opacity": 1,
       },
     },
-    enableZoom: true,
+    enableZoom: false ,
     hoverColor: "#79e580",
     markers: [
       {
